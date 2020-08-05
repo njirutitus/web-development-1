@@ -14,26 +14,43 @@
     <body>
         <div class="content-wrapper">
             <header>
-                <div class="logo"><a href="#">E-farm</a></div>
+                <div class="logo"><a  class="nav-item" href="#">E-farm</a></div>
                 <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contact.html">Contact US</a></li>
-                    </ul>
+                    <div>
+                        <a class="nav-item" href="index.html">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="products.html">Products</a>
+                            <div class="dropdown-content">
+                                <a href="products.html?cat=poultry">Poultry</a>
+                                <a href="products.html?cat=grains">Grains</a>
+                                <a href="products.html?cat=livestock">Livestock</a>
+                                <a href="products.html?cat=fish">Fish</a>
+                                <a href="products.html?cat=tubers">Tubers</a>
+                            </div>
+                        </div>
+                        <a class="nav-item" href="about.html">About us</a>
+                        <a  class="nav-item" href="contact.html">Contact US</a>
+                    </div>
                 </nav>
-                <div class="account">
-                    <a href="">Login</a>
-                    <a href="">Sign Up</a>
+                <div class="nav-item dropdown account">
+                    <a  class="nav-item" href="#">Account</a>
+                    <div class="dropdown-content">
+                        <a href="">Login</a>
+                        <a href="">Sign Up</a>
+                    </div>
                 </div>
             </header>
+            <section class="breadcrumb">
+                <a href="index.html">Home</a>
+                <div class="separator">/</div>
+                <a href="products.html">Products</a>
+            </section>
             <main class="grd-items">
                 <div class="item-1">
                     <figure>
-                        <img src="images/cock.jpg" alt="Image of a cock" height="250" width="200">
+                        <img src="images/cock.jpg" alt="Image of a cock">
                         <figcaption>
-                            <p>3kgs Cock</p>
+                            <p><a href="details.html?id=1">3kgs Cock</a></p>
                             <p>Kshs. 1200</p>
                         </figcaption>
                     </figure>
@@ -41,9 +58,9 @@
                 </div>
                 <div class="item-2">
                     <figure>
-                        <img src="images/cock.jpg" alt="Image of a cock" height="250" width="200">
+                        <img src="images/cock.jpg" alt="Image of a cock">
                         <figcaption>
-                            <p>3kgs Cock</p>
+                            <p><a href="details.html?id=2"></a>3kgs Cock</p>
                             <p>Kshs. 1200</p>
                         </figcaption>
                     </figure>
@@ -51,9 +68,9 @@
                 </div>
                 <div class="item-3">
                     <figure>
-                        <img src="images/cock.jpg" alt="Image of a cock" height="250" width="200">
+                        <img src="images/cock.jpg" alt="Image of a cock">
                         <figcaption>
-                            <p>3kgs Cock</p>
+                            <p><a href="details.html?id=3"></a>3kgs Cock</p>
                             <p>Kshs. 1200</p>
                         </figcaption>
                     </figure>
@@ -61,9 +78,9 @@
                 </div>
                 <div class="item-4">
                     <figure>
-                        <img src="images/cock.jpg" alt="Image of a cock" height="250" width="200" >
+                        <img src="images/cock.jpg" alt="Image of a cock">
                         <figcaption>
-                            <p>3kgs Cock</p>
+                            <p><a href="details.html?id=4"></a>3kgs Cock</p>
                             <p>Kshs. 1200</p>
                         </figcaption>
                     </figure>
@@ -71,9 +88,9 @@
                 </div>
                 <div class="item-5">
                     <figure>
-                        <img src="images/cock.jpg" alt="Image of a cock" height="250" width="200" >
+                        <img src="images/cock.jpg" alt="Image of a cock">
                         <figcaption>
-                            <p>3kgs Cock</p>
+                            <p><a href="details.html?id=5"></a>3kgs Cock</p>
                             <p>Kshs. 1200</p>
                         </figcaption>
                     </figure>

@@ -14,20 +14,37 @@
     <body>
         <div class="content-wrapper">
             <header>
-                <div class="logo"><a href="#">E-farm</a></div>
+                <div class="logo"><a  class="nav-item" href="#">E-farm</a></div>
                 <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contact.html">Contact US</a></li>
-                    </ul>
+                    <div>
+                        <a class="nav-item" href="index.html">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="products.html">Products</a>
+                            <div class="dropdown-content">
+                                <a href="products.html?cat=poultry">Poultry</a>
+                                <a href="products.html?cat=grains">Grains</a>
+                                <a href="products.html?cat=livestock">Livestock</a>
+                                <a href="products.html?cat=fish">Fish</a>
+                                <a href="products.html?cat=tubers">Tubers</a>
+                            </div>
+                        </div>
+                        <a class="nav-item" href="about.html">About us</a>
+                        <a  class="nav-item" href="contact.html">Contact US</a>
+                    </div>
                 </nav>
-                <div class="account">
-                    <a href="">Login</a>
-                    <a href="">Sign Up</a>
+                <div class="nav-item dropdown account">
+                    <a  class="nav-item" href="#">Account</a>
+                    <div class="dropdown-content">
+                        <a href="">Login</a>
+                        <a href="">Sign Up</a>
+                    </div>
                 </div>
             </header>
+            <section class="breadcrumb">
+                <a href="index.html">Home</a>
+                <div class="separator">/</div>
+                <a href="index.html">Categories</a>
+            </section>
             <main class="flx-main-items">
                 <article>
                     <h2>Categories</h2>
